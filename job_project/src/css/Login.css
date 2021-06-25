@@ -1,24 +1,14 @@
-body{
-    margin: 20px;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    
-}
 .login{
     display: flex;
     border: 1px solid black;
     width: 350px;
     height: 300px;
-    margin: auto;
+    margin: 20px;
     padding: 20px;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
     box-shadow: 0 10px 10px gray;
-}
-h2{
-    text-align: center;
 }
 .login__page{
     align-items: center;
