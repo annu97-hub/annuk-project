@@ -11,11 +11,19 @@ body{
     display: flex;
     gap: 8px;
 }
+h2{
+    font-family: 'Oswald', sans-serif;
+    color: maroon;
+}
+
 input{
     border-radius: 8px;
     margin: 10px;
     padding: 8px;
     width: 300px;
+    box-shadow: 0 10px 10px gray;
+    background-color: lightyellow;
+    font-family: 'Benne', serif;
    
 }
 .containers{
