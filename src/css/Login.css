@@ -1,0 +1,85 @@
+.login{
+    display: flex;
+    border: 1px solid black;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px gray;
+}
+.login__page{
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.login__page input{
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: lemonchiffon;
+    box-shadow: 0 5px 5px gray;
+    content: '\27a4';
+    cursor: pointer;
+    width: 100%;
+    height: 32px;
+    background: transparent;
+    border: 1px solid lightcoral;
+    margin: 15px 0 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color:brown;
+}
+
+.submit__btn{
+    background-color: lightseagreen;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+
+}
+.submit__btn:hover{
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none; 
+    font-size: 18px;
+    width: 20%;
+    padding: 6px;
+    margin: 15px;
+    display: inline-flex;
+    box-shadow: 0 10px 10px gray;
+    background-image: linear-gradient(#ddd 50%, red 50%);
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.5s, color 0.5s;
+    color: #1976d3;
+    border-radius: 12px;
+    background-image: linear-gradient(#ddd 50%,#1976d3 50%);
+}
+#forgot{
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 12px;
+    background-image: linear-gradient(#ddd 50%, red 50%);
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.5s, color 0.5s;
+    color: #1976d3;
+    border-radius: 12px;
+    background-image: linear-gradient(#ddd 50%, red 50%);
+}
+#forgot:hover{
+    color: black;
+    background-position: 0 100%;
+}
+
+a:hover{
+    color: white;
+    background-position: 0 100%;
+}
