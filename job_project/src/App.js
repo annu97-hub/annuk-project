@@ -1,8 +1,9 @@
 //import Login from "./Components/Login";
 import React from "react";
 import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
-import Test from "./components/Test";
+//import Test from "./components/Test";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 class App extends React.Component {
   render() {
@@ -19,12 +20,13 @@ class App extends React.Component {
           </Route>
           <Route path= {"/signup"} exact>
             <h1>This is SignUp page</h1>
+            <Signup/>
           </Route>
           <Route path= {"/about-us"} exact>
             <h1>This is About us page</h1>
           </Route>
           
-          <Test/>
+         
           <Route path= {"/contact-us"} exact>
             <h1>This is Contact us page</h1>
           </Route>
