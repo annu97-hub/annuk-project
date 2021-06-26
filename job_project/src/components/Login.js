@@ -6,6 +6,7 @@ function Login(){
     <div>
         <div className="login">
             <form className="login__page">
+              <h2>Login</h2>
               <label>Enter Your Email-Id :</label>
               <input type="email" placeholder="abc@gmail.com" required/>
               <label>Enter Your Password :</label>

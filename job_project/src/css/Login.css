@@ -1,14 +1,14 @@
 .login{
     display: flex;
     border: 1px solid black;
-    width: 350px;
-    height: 300px;
+    width: 30%;
+    height: 40%;
     margin: auto;
     padding: 10px;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    box-shadow: 0 10px 10px gray;
+    box-shadow: 0 10px 10px brown;
 }
 .login__page{
     align-items: center;

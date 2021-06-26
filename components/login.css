@@ -8,8 +8,8 @@ body{
 .login{
     display: flex;
     border: 1px solid black;
-    width: 350px;
-    height: 300px;
+    width: 35%;
+    height: 40%;
     margin: auto;
     padding: 20px;
     align-items: center;
