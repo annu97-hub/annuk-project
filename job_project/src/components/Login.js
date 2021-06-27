@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/Login.css";
-import { Link,Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../store/actions/auth";
 
@@ -31,13 +31,10 @@ const Login = ({history}) => {
     event.preventDefault();
     dispatch(
       loginUser({
-        phone: loginData.email,
+        email: loginData.email,
         password: loginData.password,
       })).then((response) => {
-        //setLoading(false);
-        // reset the form
-        //reset();
-        history.push('/signup');
+        history.push('/');
       }).catch((err) => {
         alert(err);
         console.log("ERR => while login user", err);

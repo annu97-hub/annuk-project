@@ -1,9 +1,8 @@
-export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-export const IMAGE_BASE_URL = process.env.REACT_APP_IMAGE_BASE_URL;
+export const API_BASE_URL = 'http://localhost:31001';
 
-export const LOGIN_USER_ENDPOINT = API_BASE_URL + "/login";
-export const REGISTER_USER_ENDPOINT = API_BASE_URL + "/register_or_update";
-export const CHANGE_PASSWORD_ENDPOINT = API_BASE_URL + "/changepassword.php";
+export const LOGIN_USER_ENDPOINT = API_BASE_URL + "/user/login";
+export const REGISTER_USER_ENDPOINT = API_BASE_URL + "/user/register";
+
 
 // EXPENSE
 export const ADD_EXPENSE_ENDPOINT = API_BASE_URL + "/expense/add";
