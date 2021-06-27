@@ -1,7 +1,7 @@
 import React,  { useState } from "react";
 import "../css/Search.css";
 import {  useDispatch } from "react-redux";
-import { registerUser } from "../store/actions/auth";
+import { applyUser } from "../store/actions/auth";
 
 
 
@@ -81,7 +81,8 @@ function Search ({history}) {
                                   onChange={setFormData("Package")}
                                   />
                                   <br/>
-                                  <button type={"submit"} className={"button"}>
+                                  <button type={"submit"} 
+                                  className={"button"}>
                                  Apply..
                                </button>
                             </form>

@@ -38,7 +38,7 @@ export const loginUser = (userData) => (dispatch) => {
       // store the user and token in the localStorage
       localStorage.setItem("token", JSON.stringify(data.data.token));
       localStorage.setItem("user", JSON.stringify(data.data.user));
-
+     
       dispatch({
         type: USER_SIGN_IN,
         payload: {
