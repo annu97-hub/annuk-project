@@ -45,30 +45,29 @@ exports.login = async (request, response) => {
     }
 }
 
+exports.addJob = async (request, response) => {
+    
+    let userObj = {};
+    userObj = request.body;
+    
+    try {
+        let save = await Services.UserService.saveJob(userObj);
+        return Services.GlobalService.sendSuccess(response, 'Job saved successfully.', save);
+    } catch (err) {
+        console.log(err);
+        return Services.GlobalService.sendError(response, err);
+    }
+}
 
-exports.checkUnique = async (request, response) => {
-    let type = request.body.type; // username or email
-    let userName = request.body.userName;
-    let email = request.body.email; 
-    try{
-        console.log(request.body);
-        if(type == 'username'){
-            let userObj = await Services.UserService.checkUnique(userName, type);
-            if(userObj.length == 0)
-                return Services.GlobalService.sendSuccess(response, 'Username available');
-            else
-                return Services.GlobalService.sendError(response, 'Username exits.');
-        }else if(type == 'email'){
-            let userObj = await Services.UserService.checkUnique(email, type);
-            console.log(userObj);
-            if(userObj.length == 0)
-                return Services.GlobalService.sendSuccess(response, 'Email available');
-            else
-                return Services.GlobalService.sendError(response, 'Email exits.');
-        }else{
-            return Services.GlobalService.sendError(response, 'Type can be username or email only.');
-        }
-    }catch(err){
+exports.listJob = async (request, response) => {
+    
+    let userObj = {};
+    userObj = request.body;
+    
+    try {
+        let save = await Services.UserService.listJob(userObj);
+        return Services.GlobalService.sendSuccess(response, 'Job listed successfully.', save);
+    } catch (err) {
         console.log(err);
         return Services.GlobalService.sendError(response, err);
     }

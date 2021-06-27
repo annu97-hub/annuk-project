@@ -2,8 +2,9 @@ export const API_BASE_URL = 'http://localhost:31001';
 
 export const LOGIN_USER_ENDPOINT = API_BASE_URL + "/user/login";
 export const REGISTER_USER_ENDPOINT = API_BASE_URL + "/user/register";
+export const ADD_JOB_ENDPOINT = API_BASE_URL + "/user/addJob";
 
-
+export const LIST_JOB_ENDPOINT = API_BASE_URL + "/user/listJob";
 // EXPENSE
 export const ADD_EXPENSE_ENDPOINT = API_BASE_URL + "/expense/add";
 export const LIST_EXPENSE_ENDPOINT = API_BASE_URL + "/transcation.php";

@@ -1,9 +1,11 @@
 import axios from "axios";
 import { DEFAULT_HEADERS } from "../../utils";
-import { USER_SIGN_IN, USER_SIGN_OUT } from "../constants/auth";
+import { USER_SIGN_IN, USER_SIGN_OUT, LIST_JOB } from "../constants/auth";
 import {
   LOGIN_USER_ENDPOINT,
   REGISTER_USER_ENDPOINT,
+  ADD_JOB_ENDPOINT,
+  LIST_JOB_ENDPOINT
 } from "../../constants/api";
 
 export const registerUser = (userData) => (dispatch) => {
@@ -15,6 +17,47 @@ export const registerUser = (userData) => (dispatch) => {
         userData,
         DEFAULT_HEADERS
       );
+
+      resolve();
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
+
+
+export const addJob = (jobData) => (dispatch) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      
+      const { data } = await axios.post(
+        `${ADD_JOB_ENDPOINT}`,
+        jobData,
+        DEFAULT_HEADERS
+      );
+
+      resolve();
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
+
+export const listJob = (jobData) => (dispatch) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      
+      const { data } = await axios.get(
+        `${LIST_JOB_ENDPOINT}`,
+        DEFAULT_HEADERS
+      );
+      
+      dispatch({
+        type: LIST_JOB,
+        payload: {
+          data: data.data,
+        },
+      });
 
       resolve();
     } catch (error) {

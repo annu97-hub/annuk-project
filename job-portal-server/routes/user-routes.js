@@ -29,6 +29,10 @@ var Controller = require('../controllers');
  */
 router.post('/register', Controller.UserController.register);
 
+router.post('/addJob', Controller.UserController.addJob);
+
+router.get('/listJob', Controller.UserController.listJob);
+
 /**
  * @swagger
  *
@@ -75,7 +79,7 @@ router.post('/login', Controller.UserController.login);
  *       200:
  *         description: login
  */
-router.post('/checkUnique', Controller.UserController.checkUnique);
+
 
 /**
  * @swagger

@@ -4,6 +4,8 @@ import {
   USER_SIGN_IN,
   USER_SIGN_OUT,
   USER_UPDATE_PROFILE,
+  ADD_JOB,
+  LIST_JOB
 } from "../constants/auth";
 
 const user = localStorage.getItem("user")
@@ -29,6 +31,17 @@ export const authReducer = (state = initialState, action) => {
         user: action.payload.user,
         token: action.payload.token,
       };
+
+      case ADD_JOB:
+        return {
+          ...state,
+          
+        };
+        case LIST_JOB:
+        return {
+          ...state,
+          listJob: action.payload.data,
+        };  
     case USER_SIGN_IN:
       return {
         ...state,
