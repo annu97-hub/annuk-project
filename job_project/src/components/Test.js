@@ -4,11 +4,11 @@ class Test extends React.Component{
     render(){
         return(
             <div>
-               <input type={"number"} placeholder={"Enter a number 1"} required/>
+               <input type={"number"} placeholder={"Enter a number 1"} value={0} />
                <br/>
-               <input type={"number"} placeholder={"Enter a number2"} required/>
+               <input type={"number"} placeholder={"Enter a number2"} value={0} />
                <br/>
-               <button/>
+               <button>Add</button>
             </div>
         )
 

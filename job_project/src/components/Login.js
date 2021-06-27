@@ -7,7 +7,7 @@ import { loginUser } from "../store/actions/auth";
 const Login = ({history}) => {
   
   const dispatch = useDispatch();
-  const initialState = { email: "", password: "" };
+   const initialState = { email: "", password: "" };
   const [loginData, setLoginData] = useState(initialState);
 
   const setFormData = (type) => (event) => {

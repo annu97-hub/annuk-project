@@ -1,8 +1,20 @@
-import React from "react";
+
+
+import React, { useState } from "react";
 import "../css/Signup.css";
+import { Link,Redirect } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../store/actions/auth";
 
 
-function Signup(){
+
+const Login = ({history}) => {
+  
+  const dispatch = useDispatch();
+   const initialState = { email: "", password: "" };
+  const [loginData, setLoginData] = useState(initialState);
+
+  const setFormData = (type) => (event) => {
   
         return(
             <div className={"section"} >

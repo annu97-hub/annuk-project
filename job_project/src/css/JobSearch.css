@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+  }
+  .search-page{
+    margin:  100px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 8px;
+  }
+  h2{
+    font-family: 'Oswald', sans-serif;
+    color: maroon;
+  }
+  
+  input{
+    border-radius: 8px;
+    margin: 30px;
+    padding: 8px;
+    width: 300px;
+    box-shadow: 0 10px 10px gray;
+    background-color: lightyellow;
+    font-family: 'Benne', serif;
+   
+  }
+  .containers{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2) ;
+  
+  
+  }
+  h1{
+    text-align: center;
+    font-weight: bold;
+    border:4px solid brown;
+    width: 400px;
+    height: 40px;
+    margin-left: 35rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 10px gray;
+  }
+  .icons a{
+    display: inline-flex;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    font-size: 50px;
+  
+    text-decoration: none;
+    background-color: white;
+    margin: 50px;
+    box-shadow: 0 10px 10px gray;
+    background-image: linear-gradient(#ddd 50%, #1976d3 50%);
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.5s, color 0.5s;
+  
+  }
+  .icons a:nth-child(1){
+    color: #1976d3;
+    background-image: linear-gradient(#ddd 50%, red 50%);
+  }
+  .icons a:nth-child(2){
+    color: black;
+    background-image: linear-gradient(#ddd 50%, #1976d3 50%);
+  }
+  .icons a:nth-child(3){
+    color: black;
+    background-image: linear-gradient(#ddd 50%, #1976d3 50%);
+  }
+  .icons a:nth-child(4){
+    color: black;
+    background-image: linear-gradient(#ddd 50%, #1976d3 50%);
+  }
+  .icons a:nth-child(5){
+    color: black;
+    background-image: linear-gradient(#ddd 50%, #1976d3 50%);
+  }
+  .icons a:nth-child(6){
+    color: black;
+    background-image: linear-gradient(#ddd 50%, #1976d3 50%);
+  }
+  .icons a:hover{
+    background-position: 0% 100%;
+    color: #fff;
+  }
+  #sarkari{
+    margin-left: 40rem;
+  }
