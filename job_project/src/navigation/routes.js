@@ -6,6 +6,7 @@ import PrivateRoute from "./PrivateRoute";
 import Login from "../components/Login";
 import Signup from "../components/Signup";
 import Search from "../components/Search";
+import JobSearch from "../components/JobSearch";
 
 // Private Routes imports
 //import Home from "../pages/Home";
@@ -21,7 +22,9 @@ const AppRoutes = () => {
         {/* Public Routes */}
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
-        <Route path='/search' component={Search} />
+        <PrivateRoute path='/add-job' component={Search} />
+        <PrivateRoute path='/' component={JobSearch} exact/>
+        
       </Switch>
     </Router>
   );
