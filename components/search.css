@@ -1,0 +1,53 @@
+body{
+    margin: 10px;
+    padding: 10px;
+
+}
+.page{
+    display: flex;
+    margin-left: 30rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px gray;
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.search__page{
+    margin: 20px;
+    padding: 10px;
+   
+}
+label{
+    font-weight: bold;
+    
+}
+.text{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 2rem ;
+    width: 300px;
+    height: 40px;
+   text-align: center;
+   background-color: lightgray;
+}
+button{
+    margin-left: 5.5rem;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+button:hover{
+    background-color: lightpink;
+}
+#checkbox{
+    background-color: skyblue;
+    color: steelblue;
+    margin-top: 10px ;
+    margin-left: 3.5rem;
+}
