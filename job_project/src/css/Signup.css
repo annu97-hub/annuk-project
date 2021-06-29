@@ -9,10 +9,10 @@
 .signup{
     display: flex;
     border: 1px solid black;
-    width: 35%;
-    height: 40%;
+    width: 300px;
+    height: 450px;;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
@@ -20,8 +20,9 @@
     
 }
 .signup__page{
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-   
 }
 .signup__page input{
     font-size: 15px;
@@ -54,7 +55,7 @@ h2{
 .submit__btn{
     background-color: lightseagreen;
     cursor: pointer;
-    width: 200px;
+    width: 100px;
     border-radius: 12px;
 
 }
@@ -62,21 +63,9 @@ h2{
     background-color: cadetblue;
     transition: 0.5s;
 }
-a{
-    text-decoration: none; 
-    font-size: 20px;
-    margin: 10px;
-    display: inline-flex;
-    box-shadow: 0 10px 10px gray;
-    background-image: linear-gradient(#ddd 50%, red 50%);
-    background-size: 100% 200%;
-    background-position: 0% 5%;
-    transition: background-position 0.5s, color 0.5s;
-    color: #1976d3;
-    border-radius: 15px;
-    background-image: linear-gradient(#ddd 50%,#1976d3 50%);
-}
-a:hover{
-    color: white;
-    background-position: 0 100%;
+
+@media(max-width:540px){
+    .signup{
+        flex: 100%;
+    }
 }

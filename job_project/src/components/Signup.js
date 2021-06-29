@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/Signup.css";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../store/actions/auth";
 
@@ -61,9 +62,9 @@ function Signup({history}) {
     <div className={"section"}>
       <div className={"signup"}>
         <form className={"signup__page"} onSubmit={onSignup}>
-          <h2>SignUp</h2>
-
+          <h2 id={"signup-type"}>SignUp</h2>
           <lable>Enter Your FirstName :</lable>
+          <br />
           <input
             type={"text"}
             placeholder={"firstName"}
@@ -71,6 +72,7 @@ function Signup({history}) {
           />
           <br />
           <label> Enter Your LastName :</label>
+          <br />
           <input
             type={"text"}
             placeholder={"lastName"}
@@ -78,6 +80,7 @@ function Signup({history}) {
           />
           <br />
           <label>Enter Your Email-Id :</label>
+          <br />
           <input
             type={"email"}
             placeholder={"abc@gmail.com"}
@@ -85,6 +88,7 @@ function Signup({history}) {
           />
           <br />
           <label>Enter Your Password :</label>
+          <br />
           <input
             type={"password"}
             placeholder={"Password"}
@@ -94,6 +98,8 @@ function Signup({history}) {
           <button type={"submit"} className={"submit__btn"}>
             Submit
           </button>
+          
+          <Link to="/login"> Login </Link>
         </form>
       </div>
     </div>

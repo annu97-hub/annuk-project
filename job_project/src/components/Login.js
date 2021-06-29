@@ -46,25 +46,29 @@ const Login = ({history}) => {
     <div>
       <div className="login">
         <form className="login__page" onSubmit={onLogin}>
-          <h2>Login</h2>
+          <h2 id={"login-type"}>Login</h2>
           <label>Enter Your Email-Id :</label>
+          <br />
           <input
             type="email"
             placeholder="abc@gmail.com"
             required
             onChange={setFormData("email")}
           />
+           <br />
           <label>Enter Your Password :</label>
+          <br />
           <input
             type="password"
             placeholder="Password"
             required
             onChange={setFormData("password")}
           />
-
+           <br />
           <button type="submit" class="submit__btn" required>
             Submit
           </button>
+          <br />
           <Link to="/signup"> SignUp </Link>
         </form>
       </div>

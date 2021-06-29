@@ -23,14 +23,9 @@ const AppRoutes = () => {
         {/* Public Routes */}
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
-<<<<<<< HEAD
-        <Route path='/search' component={Search} />
-      
-=======
         <PrivateRoute path='/add-job' component={Search} />
         <PrivateRoute path='/' component={JobSearch} exact/>
         
->>>>>>> d20de2be77e3b379de9559df94b3425f1edfd536
       </Switch>
     </Router>
   );

@@ -19,24 +19,27 @@ const JobSearch = () => {
 
   return (
     <>
-      <div className={"search-page"}>
-        <h2>Find A Perfect Job for Yourself</h2>
-        <form>
+     <h2>Find A Perfect Job for Yourself</h2>
+      <div >
+        <form >
           <input
+          className={"search"}
             type="search"
             placeholder="Find your perfect Companies"
             required
           />
+          <hr></hr>
         </form>
 
-        <div class="container">
-          <h1>Software Companies</h1>
+        <div className="container">
+          
           { jobs &&
             jobs.map((job) => (
               <div class="icons">
                 <p> Comany name: {job.companyName}</p>
                 <p> Job name: {job.postName}</p>
                 <p> Package: {job.package}</p>
+                <p> Description: {job.description}</p>
               </div>
             ))}
         </div>
