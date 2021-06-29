@@ -18,7 +18,17 @@ const JobSearch = () => {
   }, []);
 
   return (
-    <>
+    <div className="display">
+     
+          <div class="flex-container">
+         <div id="title">JOB-PORTAL.COM</div>
+        <div>Home</div>
+        <div>View</div>
+        <div>Tools</div>
+        <div>Edit</div>
+        <div>About</div>
+        </div>
+      
      <h2>Find A Perfect Job for Yourself</h2>
       <div >
         <form >
@@ -44,7 +54,12 @@ const JobSearch = () => {
             ))}
         </div>
       </div>
-    </>
+      <div class="footer">
+       <p>Job Portal is  for searching a best Job for you.</p>
+       <p></p>
+       </div>
+    </div>
+     
   );
 };
 

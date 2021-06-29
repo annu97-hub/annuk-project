@@ -35,9 +35,44 @@ h2{
 .container{
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: 250px 250px 250px ;
-    grid-row-gap: 25px;
+    grid-template-columns: 300px 300px 300px ;
+    grid-row-gap: 30px;
 }
-
-
-
+.flex-container{
+    overflow: hidden;
+    background-color: #333;
+}
+#title{
+    float: left;
+}
+.flex-container div{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.flex-container div:hover {
+    background-color: #ddd;
+    color: black;
+}
+.flex-container div.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+@media only screen and (max-width:440px){
+    body{
+        color: green;
+    }
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
+ 
